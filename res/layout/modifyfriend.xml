@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photoToChange"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="30dip"
+        android:onClick="changePhoto" />
+    
+    <LinearLayout 
+        android:id="@+id/IP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/photoToChange"
+        android:background="@drawable/text3"
+        android:paddingLeft="18dip"
+        android:paddingTop="14dip"
+        >
+        
+    <TextView
+        android:id="@+id/IPLabel"
+         android:layout_below="@+id/photoToChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4D91BF"
+        android:text="IP:"         
+        android:textSize="8pt"/>
+
+    <TextView
+        android:id="@+id/IP_display"
+        android:layout_below="@+id/photoToChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4D91BF"
+        android:text="TextView"
+        android:textSize="8pt" />
+  </LinearLayout>
+  
+
+
+    <EditText
+        android:id="@+id/editNickName"
+        android:layout_below="@+id/IP"
+		android:hint="Peer Nickname" 		
+        android:paddingLeft="18dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text2"
+        android:ems="10"
+        android:textColor="#4D91BF" />
+
+ 
+
+    <Button
+        android:id="@+id/backToChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+
+        android:layout_below="@+id/editNickName"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/chatting"
+        
+        android:onClick="backToChat"/>
+
+</RelativeLayout>

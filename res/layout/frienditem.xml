@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    
+		
+
+        android:layout_alignParentTop="true" >
+     <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="50dip"
+        android:layout_height="55dip"
+        
+        android:layout_marginLeft="8dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" 
+        android:src="@drawable/ic_launcher"
+         />
+
+     <TextView
+         android:id="@+id/nicknameView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="100dip"
+         android:paddingBottom="5dip"
+         android:paddingTop="5dip"
+         android:layout_marginLeft="25dip"
+         
+         android:layout_toRightOf="@id/photoView"
+         android:layout_alignTop="@+id/photoview"
+         android:text="liding"
+         android:textSize="7pt" 
+         android:textColor="#4D91BF"
+        android:textStyle="bold"/>
+
+   
+    
+    
+
+
+    <TextView
+        android:id="@+id/latestMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photoView"
+        android:layout_toRightOf="@+id/photoView"
+        android:paddingBottom="2dip"
+        android:paddingTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="25dip"
+        android:textSize="5pt"
+        android:text="hahahahahhahahh  so funny" 
+        android:textColor="#4D91BF"
+ />
+
+    <TextView
+        android:id="@+id/ipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/photoView"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5dip"
+        android:textColor="#4D91BF"
+        android:text="10.2.2.3" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:paddingRight="50dip"
+    android:paddingLeft="8dip"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip">
+
+    <TextView
+        android:id="@+id/ChatContent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photoViewInChat1"
+        android:layout_toRightOf="@id/photoViewInChat1"
+        android:background="@drawable/chatleft"
+        android:paddingLeft="18dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="Andorid class is awesome"
+        android:textColor="#4D91BF" />
+
+    <TextView
+        android:id="@+id/TimeStamp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="20:38" 
+        android:textColor="#4D91BF"
+        android:background="#F4F7FD"/>
+
+    <ImageView
+        android:layout_marginTop="5dip"
+        
+        android:id="@+id/photoViewInChat1"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TimeStamp1"
+        android:src="@drawable/ic_launcher" 
+        />
+
+    </RelativeLayout>
+
+    
